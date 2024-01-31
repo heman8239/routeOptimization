@@ -1,0 +1,12 @@
+---
+defaults: &defaults
+  buildpacks:
+    - java_buildpack
+  memory: 1G
+  path: build/libs/routeOptimization-0.0.1-SNAPSHOT.jar
+  timeout: 180
+  services:
+
+applications:
+  - name: routing-optimizer
+    <<: *defaults
